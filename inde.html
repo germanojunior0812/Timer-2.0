@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer 2.0</title>
+
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-svg">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <div class="app">
+
+
+       <div class="one">
+
+        <section id="timeone">
+            <span id="time">25</span>
+            <span>:</span>
+            <span id="seconds">00</span>
+        </section>
+
+        <section id="controls">
+            <button data-action="toggleRunning" class="ph ph-play-circle">
+                <span class="sr-only">iniciar contador</span>  
+            </button>
+            <button data-action="togglePause" class="ph ph-pause-circle">
+                <span class="sr-only">pausar contador</span>  
+            </button>
+            <button data-action="toggleIncrease" class="ph ph-plus-circle">
+                <span class="sr-only">mais</span>  
+            </button>
+            <button data-action="toggleDecrease" class="ph ph-minus-circle">
+                <span class="sr-only">menos</span>  
+            </button>
+        </section>
+       
+       </div>
+
+       <div class="cards">
+
+            <button data-sound="https://drive.google.com/uc?id=1CRHkV72WUMdcqec5GT_KdsqFz0z3VAOA"><img src="./assets/Card 01.svg" alt=""></button>
+            <button data-sound="https://drive.google.com/uc?id=1Ip8xBqAUJ-bty51Wz8JBtX_bWXCgA0P2"><img src="./assets/Card 02.svg" alt=""></button>
+            <button data-sound="https://drive.google.com/uc?id=1OxLKpCwg2wrxXFNUHgZxJ51QEt0ac5RA"><img src="./assets/Card 03.svg" alt=""></button>
+            <button data-sound="https://drive.google.com/uc?id=1MakaBPxJvTa_whaSM3kEbRcxiVd1GRCB"><img src="./assets/Card 04.svg" alt=""></button>
+        
+
+       </div>
+       
+    </div>
+     
+       
+    <audio id="audio" src="./sund/Cafeteria.wav"></audio>
+    <script src="./script.js"></script>
+</body>
+</html>

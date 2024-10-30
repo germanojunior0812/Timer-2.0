@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    place-content: center;
+    font-size: 1.6rem;
+    padding: 19.6rem 22.6rem 18.8rem 23.3rem;
+    background-color: #f0f0f0; /* Fundo claro */
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+.app {
+    display: flex;
+    gap: 5rem; /* Menor espaço entre os elementos */
+    align-items: center;
+}
+
+#timeone {
+    color: #323238;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 150.166px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+#controls {
+    display: inline-flex;
+    height: 4.8rem;
+    align-items: flex-start;
+    gap: 0rem;
+}
+
+button {
+    border: 0;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: 6.4rem;
+    background: none; /* Adiciona transparência ao fundo do botão */
+    outline: none; /* Remove o contorno ao focar */
+    transition: color 0.3s; /* Transição suave na cor */
+}
+
+button:hover {
+    color: #1c1e1f; /* Cor ao passar o mouse */
+}
+
+.cards {
+    display: grid;
+    gap: 4.0rem;
+    grid-template-columns: repeat(2, 1fr); /* Ajuste para responsividade */
+    margin-top: 3.2rem;
+}
+
+.cards button {
+    border: none;
+    background: none; /* Remove o fundo do botão */
+    padding: 2rem; /* Espaço interno para facilitar o clique */
+    transition: transform 0.3s, box-shadow 0.3s; /* Efeitos de transição */
+    color: inherit; /* Mantém a cor do texto padrão */
+}
+
+.cards button:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    cursor: pointer; /* Muda o cursor */
+}
